@@ -197,6 +197,11 @@ export default function App() {
           </div>
         )}
       </main>
+      <footer className="footer">
+        <a href="https://github.com/d13co/messina-unstake" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </footer>
     </div>
   )
 }

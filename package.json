@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "deploy": "pnpm build && wrangler pages deploy"
   },
+  "repository": "https://github.com/d13co/messina-unstake",
   "keywords": [],
   "author": "",
   "license": "ISC",
