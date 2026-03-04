@@ -4,7 +4,7 @@ import { AlgorandClient } from '@algorandfoundation/algokit-utils'
 const MALGO_ASSET_ID = 1185173782n
 const MALGO_DECIMALS = 6
 
-const algorand = AlgorandClient.mainNet()
+const algorand = AlgorandClient.mainNet().setDefaultValidityWindow(110)
 
 export function useMAlgoBalance(address: string | null) {
   const [balance, setBalance] = useState<number | null>(null)

@@ -8,7 +8,7 @@ import { useSimulate, findAlgoPayout } from './useSimulate'
 import { useWithdrawHistory } from './useWithdrawHistory'
 import { buildWithdrawGroup, MALGO_DECIMALS, ALGO_DECIMALS } from './buildWithdrawGroup'
 
-const algorand = AlgorandClient.mainNet()
+const algorand = AlgorandClient.mainNet().setDefaultValidityWindow(110)
 
 export default function App() {
   const { activeAccount, transactionSigner } = useWallet()

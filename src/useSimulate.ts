@@ -4,7 +4,7 @@ import { AlgorandClient } from '@algorandfoundation/algokit-utils'
 import algosdk, { makeEmptyTransactionSigner, TransactionSigner } from 'algosdk'
 import { buildWithdrawGroup, MALGO_DECIMALS, ALGO_DECIMALS } from './buildWithdrawGroup'
 
-const algorand = AlgorandClient.mainNet()
+const algorand = AlgorandClient.mainNet().setDefaultValidityWindow(110)
 
 export interface SimulateResult {
   algoReceived: number
