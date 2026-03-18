@@ -29,6 +29,9 @@ importers:
       algosdk:
         specifier: ^3.5.2
         version: 3.5.2
+      buffer:
+        specifier: ^6.0.3
+        version: 6.0.3
       lute-connect:
         specifier: ^1.7.0
         version: 1.7.0
